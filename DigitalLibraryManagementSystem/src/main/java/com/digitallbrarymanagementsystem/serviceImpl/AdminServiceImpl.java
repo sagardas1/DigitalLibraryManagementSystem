@@ -31,7 +31,7 @@ public class AdminServiceImpl implements AdminService {
 
 	@Autowired
 	private IssueDAO issueDAO;
-	
+
 	@Autowired
 	private IssueDumpDAO issueDumpDAO;
 
@@ -56,8 +56,7 @@ public class AdminServiceImpl implements AdminService {
 			allBooks.add(new BooksDTO(book.getBID(), book.getBookName(), book.getPrice(), book.getGenre()));
 
 		}
-		
-		
+
 		return allBooks;
 	}
 
@@ -96,21 +95,22 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public String returnBook(long bookId) {
 		// TODO Auto-generated method stub
-		//int updateCheck = issueDAO.updateIssedBookReturnDate(LocalDate.now(), bookId);
+		// int updateCheck = issueDAO.updateIssedBookReturnDate(LocalDate.now(),
+		// bookId);
 		List<Issue> getissue = issueDAO.getIssueByBookId(bookId);
-		
-		IssueDump  issueDump = new IssueDump();
+
+		IssueDump issueDump = new IssueDump();
 		issueDump.setBID(getissue.get(0).getBID());
 		issueDump.setFine(getissue.get(0).getFine());
 		issueDump.setIssueDate(getissue.get(0).getIssueDate());
 		issueDump.setPeriod(getissue.get(0).getPeriod());
 		issueDump.setUID(getissue.get(0).getIID());
 		issueDump.setReturnDate(LocalDate.now());
-		
+
 		issueDumpDAO.save(issueDump);
-		
-		 issueDAO.deleteRecordByBID(bookId);
-		
+
+		issueDAO.deleteRecordByBID(bookId);
+
 		return "Updated the return date.";
 	}
 
