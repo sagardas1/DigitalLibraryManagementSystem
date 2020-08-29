@@ -29,13 +29,8 @@ public class UserController {
 	@PostMapping(value = "/userregistration", headers = "Accept=application/json")
 	public String userRegistration(@RequestBody RegistrationDTO registration) {
 
-		return 	userService.userRegistration(registration);
-	
+		return userService.userRegistration(registration);
+
 	}
 
-
-
-
-
-	
 }
