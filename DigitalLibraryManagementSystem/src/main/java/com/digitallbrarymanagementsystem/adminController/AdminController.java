@@ -25,7 +25,6 @@ public class AdminController {
 	@GetMapping("/getalluser")
 	List<UserDTO> getAllUser() {
 		return adminService.getAllUser();
-
 	}
 
 	@GetMapping("/getallbooks")
@@ -44,7 +43,7 @@ public class AdminController {
 	}
 
 	@GetMapping("/issuebook")
-	String issueBook(@PathVariable("userId")long userId, @RequestParam(value="bookName") String bookName ) {
+	String issueBook(@PathVariable("userId") long userId, @RequestParam(value = "bookName") String bookName) {
 		return adminService.issueBook(bookName, userId);
 	}
 
