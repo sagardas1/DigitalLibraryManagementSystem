@@ -15,8 +15,6 @@ public class LoginVo {
 	private String userName;
 	private String password;
 
-	
-
 	public long getId() {
 		return id;
 	}
