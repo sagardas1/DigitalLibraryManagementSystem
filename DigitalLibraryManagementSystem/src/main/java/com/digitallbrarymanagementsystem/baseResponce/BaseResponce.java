@@ -21,7 +21,4 @@ public class BaseResponce {
 		this.statusCode = statusCode;
 	}
 
-	
-
-	
 }
