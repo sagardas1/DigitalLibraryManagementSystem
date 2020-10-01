@@ -74,6 +74,7 @@ public class AdminServiceImpl implements AdminService {
 		return issuedBooks;
 	}
 
+	
 	@Override
 	public BooksDTO addNewBook(BooksDTO bookDTO) {
 		// TODO Auto-generated method stub
