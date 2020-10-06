@@ -15,6 +15,7 @@ public class Issue {
 	private long UID;
 	private long BID;
 	private LocalDate issueDate;
+	
 	private int period;
 	private LocalDate returnDate;
 	private double fine;
