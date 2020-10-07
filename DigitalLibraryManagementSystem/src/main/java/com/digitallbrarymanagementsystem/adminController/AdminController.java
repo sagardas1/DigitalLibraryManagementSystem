@@ -26,8 +26,6 @@ public class AdminController {
 	List<UserDTO> getAllUser() {
 		return adminService.getAllUser();
 	}
-	
-	
 
 	@GetMapping("/getallbooks")
 	List<BooksDTO> getAllBooks() {
