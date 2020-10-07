@@ -26,7 +26,7 @@ public class IssueDump {
 
 	public void setIID(long iID) {
 		IID = iID;
-		
+
 	}
 
 	public long getUID() {
