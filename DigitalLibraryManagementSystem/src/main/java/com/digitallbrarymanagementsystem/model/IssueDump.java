@@ -10,6 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class IssueDump {
 
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long IID;
