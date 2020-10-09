@@ -9,6 +9,7 @@ import javax.persistence.Id;
 public class Books {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private long BID;
 	private String bookName;
 	private Double price;
