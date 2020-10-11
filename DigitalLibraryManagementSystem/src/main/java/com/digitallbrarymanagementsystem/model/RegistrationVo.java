@@ -12,7 +12,7 @@ public class RegistrationVo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long uID;
-	
+
 	private String userName;
 	private String password;
 	private boolean admin;

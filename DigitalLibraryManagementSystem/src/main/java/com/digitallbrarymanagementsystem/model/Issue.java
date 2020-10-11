@@ -14,6 +14,7 @@ public class Issue {
 	private long IID;
 	private long UID;
 	private long BID;
+	
 	private LocalDate issueDate;
 	
 	private int period;
