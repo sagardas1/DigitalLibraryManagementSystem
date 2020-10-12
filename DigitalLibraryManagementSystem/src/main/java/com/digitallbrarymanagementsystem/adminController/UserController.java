@@ -25,6 +25,7 @@ public class UserController {
 	@Autowired
 	public UserService userService;
 	
+	
 
 	@Transactional
 	@PostMapping(value = "/userregistration", headers = "Accept=application/json")
