@@ -20,7 +20,6 @@ import com.digitallbrarymanagementsystem.userService.AdminService;
 public class AdminController {
 
 	@Autowired
-
 	AdminService adminService;
 
 	@GetMapping("/getalluser")
