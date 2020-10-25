@@ -1,6 +1,7 @@
 package com.digitallbrarymanagementsystem.baseResponce;
 
 public class BaseResponce {
+	
 
 	private String statusMessage;
 	private long statusCode;
