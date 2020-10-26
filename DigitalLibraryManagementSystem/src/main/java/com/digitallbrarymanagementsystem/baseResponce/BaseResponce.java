@@ -4,6 +4,7 @@ public class BaseResponce {
 	
 
 	
+	
 	private String statusMessage;
 	private long statusCode;
 
