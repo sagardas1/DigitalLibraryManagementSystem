@@ -21,6 +21,7 @@ public class AdminController {
 
 	@Autowired
 	AdminService adminService;
+	
 
 	@GetMapping("/getalluser")
 	List<UserDTO> getAllUser() {
