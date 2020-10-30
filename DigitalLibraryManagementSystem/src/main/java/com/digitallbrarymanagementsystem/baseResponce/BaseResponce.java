@@ -9,6 +9,7 @@ public class BaseResponce {
 		return statusMessage;
 	}
 
+	
 	public void setStatusMessage(String statusMessage) {
 		this.statusMessage = statusMessage;
 	}
