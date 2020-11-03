@@ -4,6 +4,7 @@ public class UserDTO {
 
 	private long uID;
 	private String userName;
+	
 	private boolean isAdmin;
 
 	public UserDTO(long uID, String userName, boolean isAdmin) {
