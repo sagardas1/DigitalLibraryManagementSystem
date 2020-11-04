@@ -9,6 +9,7 @@ public class BooksDTO {
 
 	
 	
+	
 	public BooksDTO(long bID, String bookName, Double price, String genre) {
 		BID = bID;
 		this.bookName = bookName;
