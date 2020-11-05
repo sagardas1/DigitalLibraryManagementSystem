@@ -18,10 +18,6 @@ import com.digitallbrarymanagementsystem.userService.AdminService;
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {
-	
-	
-	
-	
 
 	@Autowired
 	AdminService adminService;
