@@ -7,9 +7,6 @@ public class BooksDTO {
 	private Double price;
 	private String Genre;
 
-	
-	
-	
 	public BooksDTO(long bID, String bookName, Double price, String genre) {
 		BID = bID;
 		this.bookName = bookName;
