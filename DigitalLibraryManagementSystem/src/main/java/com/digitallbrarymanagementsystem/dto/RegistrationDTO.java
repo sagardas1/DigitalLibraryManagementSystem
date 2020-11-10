@@ -5,6 +5,8 @@ public class RegistrationDTO {
 	private String password;
 	private boolean admin;
 	
+	
+	
 
 	public String getUserName() {
 		return userName;
